@@ -2,24 +2,19 @@ import React from 'react';
 import ErrorBoundary from '@collab-ui/react/ErrorBoundary';
 import ErrorContainer from '../ErrorContainer';
 
-// Import Method Show Below
-// import { Button } from '@collab-ui/react';
+import { DragAndDropFile } from '@collab-ui/react';
 
 export default class PlaygroundComponent extends React.Component {
   render() {
     return (
       <ErrorBoundary fallbackComponent={<ErrorContainer />}>
-        <div />
+        <DragAndDropFile
+          ariaLabel="A playground dragndrop field"
+          filenameCaption="Filename.pdf"
+        >
+          Playground dragndrop
+        </DragAndDropFile>
       </ErrorBoundary>
     );
   }
 }
-
-// Sample Class Method Show Below
-// export default class PlaygroundComponent extends React.Component {
-//   render() {
-//     return (
-//       <Button label="Playground Button"/>
-//     );
-//   }
-// }

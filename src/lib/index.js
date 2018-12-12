@@ -30,6 +30,7 @@ export { default as CompositeAvatar } from './CompositeAvatar';
 export { default as CollapseButton } from './CollapseButton';
 export { default as ContentItem } from './ContentItem';
 export { default as DatePicker } from './DatePicker';
+export { default as DragAndDropFile } from './DragAndDropFile';
 export { default as EditableTextfield } from './EditableTextfield';
 export { default as EventOverlay } from './EventOverlay';
 export { default as ErrorBoundary } from './ErrorBoundary';

@@ -1,0 +1,60 @@
+.draganddrop {
+  background-color: rgba(0,0,0, 0.04);
+  border: 1px dashed rgba(0,0,0,0.16);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 16px;
+  margin: 0 auto;
+
+  * {
+    display: block;
+  }
+
+  &--caption {
+    text-align: center;
+  }
+
+  &--uploading {
+    &__icon {
+      margin: 20px auto;
+    }
+    &__progress {
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      .progress {
+        margin: 0;
+      }
+      &-bar {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: calc(100% - 32px);
+      }
+      &-cancel-button {
+        float: right;
+      }
+    }
+  }
+
+  &--default {
+    &__caption {
+      color: #999;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0;
+      width: 135px;
+    }
+    &__file-icon {
+      padding: auto 0;
+      height: 36px;
+      width: 36px;
+    }
+  }
+  &:hover {
+    color: #666;
+    background-color: rgba(0,0,0, 0.08);
+    border: 1px dashed rgba(0,0,0,0.24);
+  }
+}
